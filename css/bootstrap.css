@@ -1,3 +1,94 @@
+header{
+  background-color: white;
+  height: 100px;
+  width: 100%;
+}
+
+footer{
+  background-color: #111111;
+  bottom: 0;
+  background-position-x: fixed;
+  width: 100%;
+}
+
+form{
+  width: 10%;
+}
+
+ul{
+  margin-left: 10%;
+}
+
+li{
+  transition: .3s;
+}
+
+li:hover{
+  background-color: royalblue;
+  border-radius: 20px;
+}
+
+.navbar-brand{
+  margin-left: 2%;
+}
+
+.pfot{
+  color: white;
+  margin-left: 7%;
+}
+
+figcaption{
+  color: white;
+  font-size: 12px;
+  width: 10%;
+  margin-left: 2px;
+  width: 10%;
+}
+
+.row{
+  width: 30%;
+}
+
+.col{
+  margin-left: 20%;
+}
+
+.fig, .container{
+  display: inline-block;
+}
+
+.fig{
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.fig1, .container2{
+  display: inline-block;
+}
+
+.fig1{
+  margin-bottom: 90px;
+}
+
+.fig2{
+  margin-bottom: 12%;
+}
+
+.vlt{
+  margin-right: 2%;
+}
+
+.btn-group{
+  color: white;
+  margin-left: 90%;
+  padding-bottom: 0.5%;
+  padding-left: 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
@@ -206,9 +297,17 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+p{
+
+  font-size: 17px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 hr {
   margin: 1rem 0;
-  color: inherit;
+  color: white;
   border: 0;
   border-top: var(--bs-border-width) solid;
   opacity: 0.25;
@@ -223,12 +322,38 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
+  text-align: center;
   font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
   }
+}
+
+ion-icon{
+  color: white;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+ion-icon:hover{
+  background: royalblue;
+  border-radius: 20px;
+}
+
+h1{
+  color: royalblue;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2{
+  margin-top: 3%;
+  margin-left: 20%;
 }
 
 h2, .h2 {
@@ -264,11 +389,6 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 abbr[title] {
@@ -720,6 +840,12 @@ progress {
   height: auto;
 }
 
+.col{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .figure {
   display: inline-block;
 }
@@ -775,6 +901,22 @@ progress {
     max-width: 1320px;
   }
 }
+
+.container{
+  text-align: left;
+  font-size: 23px;
+   width: 40%;
+   margin-left:3%;
+   margin-top: 3%;
+}
+
+.container2{
+  text-align: left;
+  font-size: 23px;
+   width: 40%;
+   margin-left:3%;
+}
+
 :root {
   --bs-breakpoint-xs: 0;
   --bs-breakpoint-sm: 576px;
@@ -784,8 +926,8 @@ progress {
   --bs-breakpoint-xxl: 1400px;
 }
 
-.row {
-  --bs-gutter-x: 1.5rem;
+.row{
+  --bs-gutter-x: 10px;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -793,6 +935,7 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
