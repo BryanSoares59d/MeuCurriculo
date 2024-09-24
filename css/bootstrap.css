@@ -1,7 +1,56 @@
+/* editados por mim */
 header{
   background-color: white;
   height: 100px;
   width: 100%;
+}
+
+ion-icon{
+  color: white;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+ion-icon:hover{
+  background: royalblue;
+  border-radius: 20px;
+}
+
+.container{
+  font-size: 23px;
+   width: 30%;
+   margin-left:30%;
+   margin-top: 3%;
+}
+
+.container1{
+  font-size: 23px;
+  width: 60%;
+  text-align: left;
+  margin-left: 22%;
+}
+
+.container2{
+  text-align: left;
+  font-size: 23px;
+   width: 50%;
+   margin-left:25%;
+}
+
+h1{
+  text-align: center;
+  color: royalblue;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2{
+  padding-top: 2%;
+  text-align: center;
+  color: royalblue;
 }
 
 footer{
@@ -12,7 +61,8 @@ footer{
 }
 
 form{
-  width: 10%;
+  width: 15%;
+  margin-left: 43%;
 }
 
 ul{
@@ -28,21 +78,32 @@ li:hover{
   border-radius: 20px;
 }
 
+.progress{
+  margin-left: 30%;
+  margin-top: 1%;
+  width: 40%;
+}
+
+.accordion-item{
+  width: 70%;
+  border-radius: 15px;
+}
+
+.accordion-header{
+  margin-left: 0%;
+  margin-right: 13%;
+}
+
+.accordion{
+  width: 30%;
+  height: 30%;
+  margin-left: 40%;
+  padding-top: 5%;
+  padding-bottom: 4%;
+}
+
 .navbar-brand{
   margin-left: 2%;
-}
-
-.pfot{
-  color: white;
-  margin-left: 7%;
-}
-
-figcaption{
-  color: white;
-  font-size: 12px;
-  width: 10%;
-  margin-left: 2px;
-  width: 10%;
 }
 
 .row{
@@ -53,24 +114,45 @@ figcaption{
   margin-left: 20%;
 }
 
-.fig, .container{
-  display: inline-block;
+.loc{
+  margin-left: 33.5%;
+  width: 30%;
+}
+
+.ploc{
+  margin-left: 41%;
+}
+
+.pfot{
+  color: white;
+  margin-left: 7%;
+}
+
+iframe{
+  padding-bottom: 5%;
+  width: 25%;
+  margin-left: 40%;
 }
 
 .fig{
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  height: 500px;
 }
 
-.fig1, .container2{
-  display: inline-block;
+img{
+  border-radius: 10px;
 }
 
 .fig1{
-  margin-bottom: 90px;
+  margin-bottom: 40px;
 }
 
 .fig2{
-  margin-bottom: 12%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  width: 300px;
+  height: 300px;
 }
 
 .vlt{
@@ -81,12 +163,6 @@ figcaption{
   color: white;
   margin-left: 90%;
   padding-bottom: 0.5%;
-  padding-left: 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 
 @charset "UTF-8";
@@ -284,6 +360,27 @@ figcaption{
   }
 }
 
+@media screen and (max-width: 768px) {
+  .fig {
+    width: 200px;
+    height: 200px;
+  }
+
+  h1{
+    width: 200%;
+  }
+
+  p{
+    width: 200%;
+    text-align: left;
+  }
+
+  iframe{
+    width: 350px;
+    height: 350px;
+  }
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -298,7 +395,6 @@ body {
 }
 
 p{
-
   font-size: 17px;
   font-family: "Barlow", sans-serif;
   font-weight: 400;
@@ -329,31 +425,6 @@ h1, .h1 {
   h1, .h1 {
     font-size: 2.5rem;
   }
-}
-
-ion-icon{
-  color: white;
-  font-size: 25px;
-  padding: 15px;
-  border-radius: 20px;
-  transition: .3s;
-}
-
-ion-icon:hover{
-  background: royalblue;
-  border-radius: 20px;
-}
-
-h1{
-  color: royalblue;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-h2{
-  margin-top: 3%;
-  margin-left: 20%;
 }
 
 h2, .h2 {
@@ -562,10 +633,6 @@ th {
 
 label {
   display: inline-block;
-}
-
-button {
-  border-radius: 0;
 }
 
 button:focus:not(:focus-visible) {
@@ -900,21 +967,6 @@ progress {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
   }
-}
-
-.container{
-  text-align: left;
-  font-size: 23px;
-   width: 40%;
-   margin-left:3%;
-   margin-top: 3%;
-}
-
-.container2{
-  text-align: left;
-  font-size: 23px;
-   width: 40%;
-   margin-left:3%;
 }
 
 :root {
@@ -8956,24 +9008,30 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
 
+
+.bg-one{
+  --bs-bg-opacity: 1;
+  background-color: red;
+}
+
 .bg-success {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+  background-color: red
 }
 
 .bg-info {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+  background-color: var(--bs-yellow)
 }
 
 .bg-warning {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgb(1, 158, 1)
 }
 
 .bg-danger {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+  background-color: green
 }
 
 .bg-light {
